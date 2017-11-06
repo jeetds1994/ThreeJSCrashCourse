@@ -1,0 +1,32 @@
+<html>
+  <head>
+  </head>
+
+    <title>Three JS Crash Course</title>
+    <script src="js/three.js"></script>
+
+    <style>
+      body {margin: 0;}
+      canvas{width: 100%; height: 100%;}
+    </style>
+  <body>
+
+    <script>
+
+      var scene = new Three.Scene();
+      var camera = new Three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+      var render = new Three.WebGLRender();
+
+      render.setSize( window.innerWidth, window.innerHeight)
+      document.body.appendChild(render.domElement)
+
+      var update = funtion(){
+        
+      }
+
+    </script>
+
+  </body>
+
+</html>
